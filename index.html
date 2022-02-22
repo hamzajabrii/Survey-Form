@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+</head>
+
+<body>
+    <section id="main-section">
+        <div id="header">
+            <h1 id="title">
+                freeCodeCamp Survey Form
+            </h1>
+            <p id="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur earum placeat corrupti
+                soluta illo animi quibusdam maxime, laboriosam maiores laborum.
+            </p>
+        </div>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">
+                Name
+                <input type=" text" name="name" id="name" required placeholder="Enter your name here" />
+            </label>
+            <label for="email" id="email-label">
+                Email
+                <input type="email" name="email" id="email" required placeholder="Enter your email here" />
+            </label>
+            <label for="number" id="number-label">
+                Age (optional)
+                <input type="number" name="number" id="number" min="18" max="90" placeholder="Age" />
+            </label>
+            <label for="dropdown" id="dropdown-label">
+                Which option best describes your current role?
+                <select id="dropdown">
+                    <option value="null" selected>Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full time Job">Full time Job</option>
+                    <option value="Full time learner">Full time learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+            <div id="recommendation-section">
+                Would you recommend freeCodeCamp to a friend?
+                <div>
+                    <input type="radio" id="definitely" name="recommendation" value="definitely" checked>
+                    <label for="definitely">Definitely</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="maybe" name="recommendation" value="maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="notsure" name="recommendation" value="Not sure">
+                    <label for="notsure">Not sure</label>
+                </div>
+            </div>
+            <div id="improved-section">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <div id="selection">
+                    <label for="frontend">
+                        <input type="checkbox" name="frontend" id="frontend" value="Front-end Projects" />
+                        Front-end Projects
+                    </label>
+                    <label for="backend">
+                        <input type="checkbox" name="backend" id="backend" value="Back-end Projects" />
+                        Back-end Projects
+                    </label>
+                    <label for="datavisualisation">
+
+                        <input type="checkbox" name="datavisualisation" id="datavisualisation"
+                            value="Data Visualization" />
+                        Data Visualization
+                    </label>
+                    <label for="frontend">
+                        <input type="checkbox" name="challenges" id="challenges" value="Challenges" />
+                        Challenges
+                    </label>
+                    <label for="OpenSourceCommunity">
+                        <input type="checkbox" name="OpenSourceCommunity" id="OpenSourceCommunity"
+                            value="Open Source Community" />
+                        Open Source Community
+                    </label>
+                </div>
+            </div>
+            <textarea name="comment" id="comment" cols="30" rows="10">Type your comment here</textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
